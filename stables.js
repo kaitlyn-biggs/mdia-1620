@@ -33,3 +33,5 @@ let visitorMessage = "Welcome Neigh-bor! There's always room for another friend 
 
 // Message for Late Rent
 let lateRentMessage = "Unfortunately, monthly rent for " + naomi.name + " is past due and will incur a 20% late fee. Your current balance is $" + lateRent + ".";
+
+// NEW Content
