@@ -37,17 +37,6 @@ let winona = {
     breed: "Clydesdale",
 };
 
-// Stable Name
-let stableName = "Happy Hooves Stables";
-
-// Message for Visitors 
-let visitorMessage = "Welcome Neigh-bor! There's always room for another friend at " + stableName + ".";
-
-// Message for Late Rent
-let lateRentMessage = "Unfortunately, monthly rent for " + naomi.name + " is past due and will incur a 20% late fee. Your current balance is $" + lateRent + ".";
-
-// NEW CONTENT FOR ASSIGNMENT 2
-
 let horses = [naomi, maribel, winona];
 
 // New Horse
@@ -75,8 +64,7 @@ prancelot.isHungry = false;
 let totalNumberOfStalls = 8;
 
 function logAvailableStalls () {
-    let availableStalls = totalNumberOfStalls - horses.length;
-    console.log(availableStalls);
+    console.log(totalNumberOfStalls - horses.length);
 };
 
 // Log Late Rent
