@@ -5,31 +5,78 @@ let lateRent = rent * 1.2;
 // Horses
 let naomi = {
     name: "Naomi",
+    nickname: "Neigh",
     age: 1,
-    favoriteSnack: "carrots",
+    favoriteTreat: "carrots",
     rent: rent,
     lateRent: lateRent,
+    isInside: true,
+    color: "brown",
+    breed: "Thoroughbred",
 };
 let maribel = {
     name: "Maribel",
+    nickname: "Mare",
     age: 5,
-    favoriteSnack: "apples",
+    favoriteTreat: "apples",
     rent: rent,
     lateRent: lateRent,
+    isInside: false,
+    color: "chestnut",
+    breed: "Arabian",
 };
-let winnie = {
-    name: "Winnie",
+let winona = {
+    name: "Winona",
+    nickname: "Winnie",
     age: 10,
-    favoriteSnack: "celery",
+    favoriteTreat: "celery",
     rent: rent,
     lateRent: lateRent,
+    isInside: true,
+    color: "black",
+    breed: "Clydesdale",
 };
 
-// Stable Name
-let stableName = "Happy Hooves Stables";
+let horses = [naomi, maribel, winona];
 
-// Message for Visitors 
-let visitorMessage = "Welcome Neigh-bor! There's always room for another friend at " + stableName + ".";
+// New Horse
+let prancelot = {
+    name: "Prancelot",
+    nickname: "Prance",
+    age: 10,
+    favoriteTreat: "sugar cubes",
+    rent: rent,
+    lateRent: lateRent,
+    isInside: false,
+    color: "palamino",
+    breed: "American Saddlebred",
+};
 
-// Message for Late Rent
-let lateRentMessage = "Unfortunately, monthly rent for " + naomi.name + " is past due and will incur a 20% late fee. Your current balance is $" + lateRent + ".";
+horses.push(prancelot);
+
+// Hungry?
+naomi.IsHungry = true;
+maribel.isHungry = true;
+winona.isHungry = false;
+prancelot.isHungry = false;
+
+// Log Available Stalls
+let totalNumberOfStalls = 8;
+
+function logAvailableStalls () {
+    console.log(totalNumberOfStalls - horses.length);
+};
+
+// Log Late Rent
+function logLateRentRate (horse) {
+    console.log(horse.lateRent);
+};
+
+logLateRentRate(naomi);
+
+// Log Nickname
+function getHorseNickname (horse) {
+    return horse.nickname;
+};
+
+console.log(getHorseNickname(naomi))
