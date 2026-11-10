@@ -14,6 +14,7 @@ let naomi = {
     color: "brown",
     breed: "Thoroughbred",
 };
+
 let maribel = {
     name: "Maribel",
     nickname: "Mare",
@@ -25,6 +26,7 @@ let maribel = {
     color: "chestnut",
     breed: "Arabian",
 };
+
 let winona = {
     name: "Winona",
     nickname: "Winnie",
@@ -55,7 +57,7 @@ let prancelot = {
 horses.push(prancelot);
 
 // Hungry?
-naomi.IsHungry = true;
+naomi.isHungry = true;
 maribel.isHungry = true;
 winona.isHungry = false;
 prancelot.isHungry = false;
